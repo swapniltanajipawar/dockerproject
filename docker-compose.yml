@@ -2,17 +2,17 @@ version: '3.8'
 services:
   movies:
     image: swpawar/movies:latest
-	ports:
-	  - "81:80"
-	deploy:
-	  replicas: 3
+    ports:
+       - "81:80"
+    deploy:
+	replicas: 3
 
   train:
     image: hpakala53/paytmtrain:latest
     ports:
-	  - "82:80"
-	deploy:
-	  replicas: 3
+       - "82:80"
+    deploy:
+	replicas: 3
   
   dth:
    image: hpakala53/paytmdth:latest
